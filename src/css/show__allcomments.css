@@ -1,0 +1,85 @@
+.show__all__Comments__or__Reactions__container {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: #222;
+  opacity: 0.5;
+  z-index: 99;
+}
+.comments__parent__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 100;
+  background-color: #242526;
+  padding: 15px 20px;
+  padding-bottom: 0;
+}
+.comments__container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.Comments__header {
+  font-size: 28px;
+}
+.container__all__comments {
+  border-top: 1px solid #3a3a3a;
+  padding: 20px 0;
+  padding-bottom: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.cancel__button__comments__conatainer {
+  cursor: pointer;
+}
+.show__more__horizontal__icons {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.delete__comment__available:hover > .show__more__horizontal__icons {
+  display: block !important;
+}
+.delete__button__container {
+  margin-left: auto;
+  width: 100px;
+  height: 40px;
+  padding: 3px;
+  border: 1px solid grey;
+  background-color: #242526;
+}
+.delete__button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.delete__button:hover {
+  background-color: #3a3a3a;
+}
+.show__replies__button,
+.add__reply {
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.replies__container {
+  margin-left: 60px;
+}
+.show__and__replies__container {
+  display: flex;
+  margin-left: 50px;
+}
+@media screen and (max-width: 480px) {
+  .comments__parent__container {
+    width: 345px;
+    border: 1px solid #3a3a3a;
+  }
+}

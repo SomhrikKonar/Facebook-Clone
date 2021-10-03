@@ -1,0 +1,27 @@
+.pages__to__be__built__container {
+  padding-top: 59px;
+  color: #f3f3f3;
+  width: 100vw;
+  height: 100vh;
+  background-color: #18191a;
+}
+.flex_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to_be_built_msg {
+  font-size: 2.2rem;
+}
+@media only screen and (max-width: 869px) {
+  .pages__to__be__built__container {
+    padding-top: 140px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .to_be_built_msg {
+    margin-top: -20px;
+    font-size: 1.2rem;
+  }
+}

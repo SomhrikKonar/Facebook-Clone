@@ -1,0 +1,178 @@
+:root {
+  --fb__logo: #1877f2;
+  --sign__in__button__bg: #1877f2;
+  --signup__up__button__background__color: #42b72a;
+  --fb__para: #1c1e21;
+  --background__color: #f0f2f5;
+  --border__color: #dfe1e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signinpage__container {
+  height: 100vh;
+  background-color: var(--background__color);
+  padding: 5%;
+}
+.left__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  max-width: 40%;
+  height: 270px;
+  margin-top: -28px;
+}
+.fb__header {
+  color: var(--fb__logo);
+  font-size: 45px;
+  font-weight: 700;
+}
+.fb__paragraph {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--fb__para);
+}
+.right__container {
+  border-radius: 8px;
+  margin-left: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #ffffff;
+}
+.outlined-input {
+  margin-bottom: 15px;
+  width: 100% !important;
+}
+
+.signin__button__container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border__color);
+  margin-bottom: 15px;
+}
+.signup__button__container {
+  margin-top: 20px;
+}
+.signin__button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--sign__in__button__bg);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.signin__button:hover {
+  background-color: #176cdb;
+}
+.signup__button {
+  width: 70%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--signup__up__button__background__color);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.signup__button:hover {
+  background-color: #3caa26;
+}
+.no__bottom__border {
+  border-bottom: 0px !important;
+  display: flex;
+  justify-content: center;
+}
+.textfield__icon {
+  float: right;
+}
+.error__message {
+  float: right;
+  max-width: 330px;
+  font-size: 20px;
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .right__container {
+    min-width: 330px;
+  }
+  .fb__paragraph {
+    padding: 0 2%;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .right__container {
+    min-width: 390px;
+  }
+  .fb__paragraph {
+    padding: 0 25%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .flex__container {
+    display: none;
+  }
+  .flex__column__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right__container {
+    /* min-width: 390px; */
+    margin: 0;
+    margin-top: 35px;
+  }
+  .left__container {
+    margin-bottom: 60px;
+    max-height: 70px;
+    min-width: 100%;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  .signup__button {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 781px) {
+  .flex__container {
+    justify-content: center;
+  }
+  .fb__paragraph {
+    padding: 0;
+  }
+  .left__container,
+  .right__container {
+    max-width: 30%;
+    margin: 0 5%;
+  }
+  .signinpage__container {
+    padding: 0;
+  }
+  /* .right__container {
+    min-width: 390px;
+  } */
+  .signup__button {
+    margin: 0;
+  }
+  .fb__header {
+    font-size: 60px;
+  }
+  .fb__paragraph {
+    font-size: 25px;
+  }
+}

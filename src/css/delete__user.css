@@ -1,0 +1,98 @@
+.delete__user__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 8px;
+  background-color: #242526;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.background__overlay__delete {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(58, 58, 58);
+  opacity: 0.8;
+}
+.delete__header {
+  padding: 8px 10px;
+  display: flex;
+  cursor: auto;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
+.delete__title {
+  letter-spacing: 2px;
+}
+.close__icon {
+  cursor: pointer;
+}
+.delete__bottom__container {
+  padding: 10px 15px;
+}
+.delete__profile__form {
+  margin-top: 10px;
+}
+.email__field,
+.password__field {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.labels {
+  width: 80px !important;
+  text-align: right;
+}
+.email__input__field,
+.password__input__field {
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  width: 70%;
+  background-color: #555658;
+  color: #fff;
+  height: 25px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+}
+.delete__action__button {
+  width: 30%;
+  margin-left: 35%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #d3091a;
+  text-align: center;
+}
+.delete__action__button:hover {
+  background-color: #ff0015;
+}
+.err__message {
+  color: #ff0015;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.deleting__overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffa7f8c2;
+}
+.deleting__overlay > .MuiCircularProgress-colorPrimary {
+  color: #0027ff;
+}

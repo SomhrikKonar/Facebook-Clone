@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --textfield__background: rgb(58, 59, 60);
+  --border__bottom: rgb(52, 52, 52);
+  --font__color: #e4e6eb;
+}
+.main__componenet__container {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 140px);
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.create__post {
+  background-color: #242526;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.create__post > .row__1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border__bottom);
+  padding-bottom: 10px;
+}
+.row__1 > .avatar > .MuiAvatar-root {
+  height: 50px !important;
+  width: 50px !important;
+}
+.create__post__text {
+  margin-left: 10px;
+  flex: 1;
+}
+.text__field > .MuiInputBase-root {
+  color: var(--font__color);
+}
+.create__post__text > .text__field {
+  background-color: var(--textfield__background);
+  border-radius: 25px;
+  padding: 5px 20px;
+  width: 100%;
+}
+.create__post > .row__2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 0px 10px;
+}
+.row__2 > .button__container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo__container {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.logo__container > .MuiSvgIcon-root {
+  height: 30px !important;
+  width: 30px !important;
+}
+.main__componenet__container::-webkit-scrollbar {
+  width: 0;
+}
+
+.scrollToTop {
+  border: 1px solid #242526;
+  background-color: rgb(247, 171, 78);
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  cursor: pointer;
+}
+.show__loading {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .main__componenet__container {
+    padding: 10px 10px;
+  }
+  .logo__container > .MuiSvgIcon-root {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .row__1 > .avatar > .MuiAvatar-root {
+    height: 35px !important;
+    width: 35px !important;
+  }
+  .create__post__text > .text__field {
+    padding: 0px 10px;
+  }
+  .text__field > .MuiInputBase-root {
+    font-size: small;
+  }
+  .row__2 > .button__container {
+    max-width: 80px;
+  }
+  .scrollToTop {
+    right: 2%;
+    bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main__componenet__container {
+    width: 53%;
+  }
+  .main__componenet__container {
+    height: calc(100vh - 59px);
+  }
+  .scrollToTop {
+    right: 2%;
+    bottom: 2%;
+    background-color: rgba(247, 171, 78, 0.342);
+  }
+  .scrollToTop:hover {
+    background-color: rgb(247, 171, 78);
+  }
+}

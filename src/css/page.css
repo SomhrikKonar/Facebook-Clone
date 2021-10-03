@@ -1,0 +1,11 @@
+.pages__parent__container {
+  padding-top: 140px;
+  background-color: #18191a;
+  color: #fff;
+  height: 100vh;
+}
+@media screen and (min-width: 901px) {
+  .pages__parent__container {
+    padding-top: 59px;
+  }
+}

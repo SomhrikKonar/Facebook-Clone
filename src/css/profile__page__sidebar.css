@@ -1,0 +1,235 @@
+.intro__container {
+  background-color: #242526;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.intro__header {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.intro__bio__container {
+  margin-top: 10px;
+}
+.intro__bio__container > .bio {
+  min-height: 50px;
+}
+.edit__intro__buttons {
+  cursor: pointer;
+  margin: 5px 0;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: #3a3b3c;
+}
+.edit__details__button {
+  margin-top: 20px;
+}
+.edit__intro__buttons:hover {
+  background-color: #6b6c6d;
+}
+.background__layout,
+.background__layout__field {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: #6b6c6d;
+  z-index: 100;
+}
+.background__layout__field {
+  z-index: 101;
+}
+.details__updater__container {
+  z-index: 101;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 96%;
+  max-width: 650px;
+  overflow-y: auto;
+  max-height: 450px;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+}
+.details__header {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 10px;
+  border-bottom: 1px solid #2f3031;
+}
+.details__description {
+  text-align: left;
+  padding: 15px 20px;
+}
+.flex__field {
+  display: flex;
+  align-items: center;
+}
+.field__work {
+  text-align: left;
+  padding: 5px 20px;
+}
+.field__work > h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.add__field__data {
+  margin-bottom: 10px;
+}
+.add__field__data > p {
+  margin-left: 15px;
+  color: #2e89ff;
+  cursor: pointer;
+}
+.add__field__data > p:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+.upload__data {
+  margin-top: 20px;
+}
+.upload__data__radio {
+  padding: 0 20px;
+}
+.input__field {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.input__field > input {
+  margin-top: 2px;
+}
+.upload__data > .MuiFormControl-root > .MuiFormLabel-root {
+  color: #2e89ff !important;
+  font-size: 20px;
+}
+.upload__data > .MuiFormControl-root > .MuiFormLabel-root {
+  border: 0 !important;
+}
+.upload__data > .MuiFormControl-root > .MuiInputBase-root .MuiInputBase-input {
+  color: white !important;
+  border: 1px solid #8a8d91;
+}
+.upload__data
+  > .MuiFormControl-root
+  > .MuiInputBase-root
+  > .MuiInputBase-input {
+  padding-top: 35px;
+}
+.MuiFilledInput-underline:after {
+  border: 0px !important;
+}
+.upload__data
+  > .MuiFormControl-root
+  > .MuiInputBase-root
+  > .MuiInputBase-input:focus {
+  box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 0 0 5px #2e89ff;
+  border-radius: 10px;
+}
+.MuiFilledInput-underline:before {
+  border: 0 !important;
+}
+.details__footer {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 15px 20px;
+  justify-content: flex-end;
+  border-top: 1px solid #2f3031;
+}
+.update__details {
+  margin-right: auto;
+}
+.details__button {
+  padding: 6px 16px;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cancel__button {
+  background-color: #3a3b3c;
+}
+.cancel__button:hover {
+  background-color: #645c58;
+}
+.save__button {
+  width: 120px;
+  background-color: #2d88ff;
+}
+.save__button:hover {
+  background-color: #569cf7;
+}
+.err__msg {
+  text-align: left;
+  color: rgb(240, 40, 40);
+  margin: 2px 0;
+}
+.social__details {
+  margin: 20px 0;
+}
+.detail__field {
+  font-size: 15px;
+  margin: 10px 5px;
+  text-align: left;
+}
+.loading__screen__details__update {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #a0a0a0;
+  opacity: 0.3;
+  justify-content: center;
+  z-index: 105;
+}
+.loader {
+  position: absolute;
+  z-index: 106;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.edit__details__existing__field {
+  padding: 5px 20px;
+  justify-content: space-between;
+  flex: 1;
+}
+@media only screen and (max-width: 480px) {
+  .details__footer {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .update__details {
+    margin-right: 0%;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  .save__cancel__Button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .cancel__button {
+    margin-left: 0;
+  }
+  .cancel__button,
+  .save__button {
+    width: 50%;
+  }
+  .upload__data__radio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input__field {
+    margin: 4px 0;
+  }
+  .input__field > input {
+    margin-right: 5px;
+  }
+}

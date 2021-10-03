@@ -1,0 +1,11 @@
+.notifications__page__conatainer {
+  padding-top: 140px;
+  background-color: #18191a;
+  color: #fff;
+  height: 100vh;
+}
+@media screen and (min-width: 901px) {
+  .notifications__page__conatainer {
+    padding-top: 59px;
+  }
+}

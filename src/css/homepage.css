@@ -1,0 +1,28 @@
+:root {
+  --border__bottom: #323233;
+  --body__background: #18191a;
+  --font__color: #ffffff;
+}
+.Homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  width: max-content;
+}
+.Homepage__body {
+  height: 100%;
+  margin-top: 59px;
+  display: flex;
+  justify-content: flex-start;
+  color: var(--font__color);
+  padding: 0px 7px;
+  background-color: var(--body__background);
+  border-top: 2px solid var(--border__bottom);
+}
+@media only screen and (max-width: 900px) {
+  .Homepage__body {
+    margin-top: 140px;
+  }
+}

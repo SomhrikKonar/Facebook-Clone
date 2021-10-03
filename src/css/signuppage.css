@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header__title: #1c1e21;
+  --header__below__title: #606770;
+  --border: #e2e2e2;
+  --field__border: #e1e1e1;
+  --signup__button: #00a400;
+  --links: #385898;
+}
+.signuppage__container {
+  position: fixed;
+  /* margin-top: 10px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.translucent__background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 25px;
+}
+.signup__header__left {
+  display: block;
+}
+.title {
+  color: var(--header__title);
+  font-size: 35px;
+  line-height: 38px;
+  margin: 0 0 10px 0;
+}
+.below__title {
+  color: var(--header__below__title);
+  font-size: 20px;
+  line-height: 24px;
+}
+.container__header__right {
+  align-items: flex-start;
+  color: var(--header__below__title);
+}
+.container__form {
+  border-top: 1px solid var(--border);
+  padding: 20px 20px 25px;
+}
+.field__name {
+  display: flex;
+  justify-content: space-between;
+}
+.field__email,
+.field__password {
+  margin: 20px 0;
+}
+.email__textfield,
+.password__textfield {
+  width: 100%;
+}
+.date__picker,
+.gender__picker {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.date__selector,
+.gender__selector {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5px 10px;
+  min-width: 150px;
+  border: 2px solid var(--field__border);
+  border-radius: 5px;
+}
+.list__container {
+  position: absolute;
+  z-index: 100;
+  max-height: 320px;
+  overflow-y: auto;
+  bottom: 36px;
+  padding: 0%;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  border: 2px solid var(--header__title);
+}
+.list__item {
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+.list__item:hover {
+  background-color: #5890ff;
+}
+.birthday__header,
+.gender__header {
+  color: var(--header__below__title);
+}
+.field__birthday {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+.gender__selector > .PrivateSwitchBase-root-5 {
+  padding: 5px 0 !important;
+}
+.field__para {
+  margin: 4px 0;
+  max-width: 480px;
+  font-size: small;
+  text-align: justify;
+}
+.para__links {
+  font-size: small;
+  color: var(--links);
+  cursor: pointer;
+}
+.para__links:hover {
+  text-decoration: underline var(--links);
+  text-underline-offset: 1px;
+  text-decoration-thickness: from-font;
+}
+.signup__button__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.signuppage__signup__button {
+  width: 60%;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: var(--signup__up__button__background__color);
+  border: 0;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  padding: auto;
+  cursor: pointer;
+}
+.signuppage__signup__button:hover {
+  background: linear-gradient(#79bc64, #578843);
+}
+@media only screen and (max-width: 480px) {
+  .container__form {
+    padding: 0px 15px 25px;
+  }
+  .signuppage__container {
+    min-width: 90%;
+  }
+  .field__name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first__name,
+  .last__name {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .field__email,
+  .field__birthday,
+  .field__password {
+    margin: 10px 0;
+  }
+  .name__textfield {
+    width: 100%;
+  }
+  .date__selector,
+  .gender__selector {
+    min-width: 95px;
+  }
+  .list__container {
+    width: 100%;
+    max-height: 300px;
+  }
+  .gender__selector {
+    padding: 2.5px 5px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+  .signuppage__container {
+    min-width: 420px;
+  }
+  .name__textfield {
+    max-width: 180px;
+  }
+  .date__selector,
+  .gender__selector {
+    min-width: 120px;
+  }
+}
+@media only screen and (min-width: 781px) {
+  .signuppage__container {
+    min-width: 500px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .name__textfield {
+    width: 230px;
+  }
+}

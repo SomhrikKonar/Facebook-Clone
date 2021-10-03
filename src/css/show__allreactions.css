@@ -1,0 +1,98 @@
+.all__reaction__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 100;
+  background-color: #242526;
+  padding: 0 5px;
+  border: 1px solid #3a3a3a;
+}
+.reaction__container__header,
+.emojis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reaction__container__header {
+  border-bottom: 1px solid #3a3a3a;
+}
+.emojis {
+  height: 50px;
+}
+.emoji__container {
+  height: 100%;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.emoji__container:hover {
+  background-color: #3a3a3a;
+}
+.show__Reaction {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected__indicator {
+  width: 100%;
+  height: 4px;
+  background-color: blue;
+  margin-bottom: 2px;
+}
+.reaction__details__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 15px;
+}
+.add__friend__conatiner {
+  margin-left: auto;
+}
+.profile__container {
+  position: relative;
+}
+.individual__reaction__container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 4px;
+  right: -2px;
+  bottom: 0;
+}
+.profile__container > .MuiAvatar-root {
+  height: 44px !important;
+  width: 44px !important;
+}
+.commentor__name {
+  font-size: 20px;
+  margin-left: 12px;
+}
+.add__friend__conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+.add__friend__conatiner:hover {
+  background-color: #464545;
+}
+.bottom__reaction__container {
+  max-height: 450px;
+  min-height: 300px;
+}
+@media screen and (max-width: 480px) {
+  .all__reaction__container {
+    width: 345px;
+  }
+}
